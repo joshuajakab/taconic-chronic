@@ -1,0 +1,14 @@
+.btn-container {
+    margin-top: 1%;
+    
+}
+
+.btn {
+    background-color: #183319;
+    border: 5px solid white;
+    outline: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}

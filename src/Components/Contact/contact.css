@@ -1,0 +1,17 @@
+#contact-container {
+    width: 80%;
+    height: 30%;
+    
+    background-color: #183319;
+    border: 5px solid white;
+    outline: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact-text {
+    text-align: center;
+    font-size: 1.8rem;
+}

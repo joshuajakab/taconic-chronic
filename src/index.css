@@ -11,3 +11,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://drive.google.com/uc?id=1mCqG1gtNWw064Ug4XoRaQoTq9hG7HFIa');
+    
+}
+
+
+
+html,
+body, 
+#root,
+.App,
+.fullHeight {
+  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+    
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-family: "cheap-pine-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "cheap-pine-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "cheap-pine-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+h1 {
+  font-family: "cheap-pine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}

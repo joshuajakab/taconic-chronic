@@ -1,23 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import About from './Components/About';
+
+/*Components*/
+import Age from './Components/Age';
+import Header from './Components/Header';
+import Home from './Components/Home';
+import Menu from './Components/Menu';
+import Testing from './Components/Testing';
+import Contact from './Components/Contact';
+
+/*CSS*/
+
 
 function App() {
+
+  const [isOfAge, setIsOfAge] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+
+  const menuToggle = () => {
+    setMenuOpen(menuOpen => !menuOpen)
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false)
+  };
+
+  const ageToggle = () => {
+    setIsOfAge(true)
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!isOfAge &&
+        
+        <Router>
+          <Routes>
+            <Route exact path='/' element={<Age ageToggle={ageToggle} />} />
+            
+          </Routes>
+        </Router>
+      }
+
+      
+
+      <Router>
+      <Header click={menuToggle} home={closeMenu}/>
+
+{menuOpen && 
+  <Menu click={menuToggle}/>
+}
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/tests' element={<Testing />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </Router>
+
     </div>
   );
 }

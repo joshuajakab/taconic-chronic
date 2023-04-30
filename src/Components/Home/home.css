@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px) {
+    #home-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home-logo {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 925px) {
+    #home-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home-logo {
+        width: 30%;
+    }
+}
