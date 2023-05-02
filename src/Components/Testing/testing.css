@@ -109,12 +109,13 @@
         text-align: center;
         color: black;
         font-size: 3rem;
-        position: fixed;
+        position: relative;
         bottom: 0;
     }
     
     .test {
-        width: 100%;
+        width: 80%;
+        margin: 0 10%;
         position: relative;
         top: 0;
         z-index: 5000;
