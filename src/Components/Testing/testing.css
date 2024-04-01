@@ -22,6 +22,10 @@
     color: white;
 }
 
+.test-link {
+    text-decoration: none;
+}
+
 .test-exit {
     width: 100%;
     text-align: center;
@@ -60,6 +64,10 @@
     #testing-subtitle {
         margin: 0;
         color: white;
+    }
+
+    .test-link {
+        text-decoration: none;
     }
     
     .test-exit {
@@ -103,6 +111,11 @@
         margin: 0;
         color: white;
     }
+
+    .test-link {
+        text-decoration: none;
+        cursor: pointer;
+    }
     
     .test-exit {
         width: 100%;
@@ -111,6 +124,7 @@
         font-size: 3rem;
         position: relative;
         bottom: 0;
+        cursor: pointer;
     }
     
     .test {

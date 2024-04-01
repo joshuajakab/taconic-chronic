@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Modal from '../defaultComponents/Modal';
+import Pathogen23 from '../../media/pathogen.jpg';
+import Pesticides23 from '../../media/pesticides.jpg';
+import Masterkush from '../../media/master-kush.jpg';
+import Homewrecker from '../../media/homewrecker.jpg';
+import Pineapple from '../../media/pineapple-muffin.jpg';
+import Blueberry from '../../media/blueberry-muffin.jpg';
+import Diesel from '../../media/diesel-roze.jpg';
+import Dream from '../../media/blue-dream.jpg';
+import Peach from '../../media/peach-crescendo.jpg';
 import './testing.css';
 
 const Testing = props => {
@@ -75,59 +84,58 @@ const Testing = props => {
         <div id='testing-container'>
             <h1 id='testing-title'>Testing</h1>
             <h3 id='testing-subtitle'>(Click to view test)</h3>
-            <Link onClick={togglePathogen}><h2>Harvest Lot Pathogen Test</h2></Link>
-            <Link onClick={togglePesticides}><h2>Harvest Lot Pesticide Test</h2></Link>
-            <Link onClick={toggleModal}><h2>Master Kush</h2></Link>
-            <Link onClick={toggleHomewrecker}><h2>Homewrecker</h2></Link>
-            <Link onClick={togglePineapple}><h2>Pineapple Muffin</h2></Link>
-            <Link onClick={toggleBlueberry}><h2>Blueberry Muffin</h2></Link>
-            <Link onClick={toggleDiesel}><h2>Diesel Roze</h2></Link>
-            <Link onClick={toggleDream}><h2>Blue Dream</h2></Link>
-            <Link onClick={togglePeach}><h2>Peach Crescendo</h2></Link>
+            <Link onClick={togglePathogen} className='test-link'><h2>Harvest Lot Pathogen Test</h2></Link>
+            <Link onClick={togglePesticides} className='test-link'><h2>Harvest Lot Pesticide Test</h2></Link>
+            <Link onClick={toggleModal} className='test-link'><h2>Master Kush</h2></Link>
+            <Link onClick={toggleHomewrecker} className='test-link'><h2>Homewrecker</h2></Link>
+            <Link onClick={togglePineapple} className='test-link'><h2>Pineapple Muffin</h2></Link>
+            <Link onClick={toggleBlueberry} className='test-link'><h2>Blueberry Muffin</h2></Link>
+            <Link onClick={toggleDiesel} className='test-link'><h2>Diesel Roze</h2></Link>
+            <Link onClick={toggleDream} className='test-link'><h2>Blue Dream</h2></Link>
+            <Link onClick={togglePeach} className='test-link'><h2>Peach Crescendo</h2></Link>
 
             <Modal {...configPathogen}>
-                <img src='https://drive.google.com/uc?id=12IrqhOe1iSZ056lqTl0r02YA4B6iLKW3' alt='test' className='test' />
+                <img src={Pathogen23} alt='test' className='test' />
                 <h2 onClick={togglePathogen} className='test-exit'>Back to list</h2>
             </Modal>
 
             <Modal {...configPesticides}>
-                <img src='https://drive.google.com/uc?id=1foB7do_kYMCB7Iyzb3JF8owhEyOGV_kT' alt='test' className='test' />
+                <img src={Pesticides23} alt='test' className='test' />
                 <h2 onClick={togglePesticides} className='test-exit'>Back to list</h2>
             </Modal>
 
             <Modal {...configModal}>
-                
-                <img src='https://drive.google.com/uc?id=1rq5KbWeHE_B-QThrqgGJqUszJRkpyv-M' alt='test' className='test' />
+                <img src={Masterkush} alt='test' className='test' />
                 <h2 onClick={toggleModal} className='test-exit'>Back to list</h2>
             </Modal>
 
             <Modal {...configHomewrecker}>
-                <img src='https://drive.google.com/uc?id=18qdKUzHBsPXPDzjAlcDGymmhVwJ0aONj' alt='test' className='test' />
+                <img src={Homewrecker} alt='test' className='test' />
                 <h2 onClick={toggleHomewrecker} className='test-exit'>Back to list</h2>
             </Modal>
 
             <Modal {...configPineapple}>
-                <img src='https://drive.google.com/uc?id=15N9vu0Muzw4SFECkCuH2kJeCRWvg1Yhw' alt='test' className='test' />
+                <img src={Pineapple} alt='test' className='test' />
                 <h2 onClick={togglePineapple} className='test-exit'>Back to list</h2>
             </Modal>
 
             <Modal {...configBlueberry}>
-                <img src='https://drive.google.com/uc?id=1QvW9K8dgqU3f90ZIn-WoaVgwzo5PxZsb' alt='test' className='test' />
+                <img src={Blueberry} alt='test' className='test' />
                 <h2 onClick={toggleBlueberry} className='test-exit'>Back to list</h2>
             </Modal>
 
             <Modal {...configDiesel}>
-                <img src='https://drive.google.com/uc?id=1gjYawx4_9j2DW9yckDQ87TW98GiO-SSH' alt='test' className='test' />
+                <img src={Diesel} alt='test' className='test' />
                 <h2 onClick={toggleDiesel} className='test-exit'>Back to list</h2>
             </Modal>
 
             <Modal {...configDream}>
-                <img src='https://drive.google.com/uc?id=1JFWYbRqKO_r9Ug7yEpwbx2Zcgxx1eZo6' alt='test' className='test' />
+                <img src={Dream} alt='test' className='test' />
                 <h2 onClick={toggleDream} className='test-exit'>Back to list</h2>
             </Modal>
 
             <Modal {...configPeach}>
-                <img src='https://drive.google.com/uc?id=180MiTFf_9-OjYfBAoXsLh2EzIJofMcGB' alt='test' className='test' />
+                <img src={Peach} alt='test' className='test' />
                 <h2 onClick={togglePeach} className='test-exit'>Back to list</h2>
             </Modal>
         </div>
