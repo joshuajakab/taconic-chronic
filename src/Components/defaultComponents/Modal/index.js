@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css'
 
-const Modal = ({ hideModal, toggleModal, children, hidePathogen, hidePesticides, hideHomewrecker, hidePineapple, hideBlueberry, hideDiesel, hideDream, hidePeach }) => {
+const Modal = ({ hideModal, toggleModal, children, hidePathogen, hidePesticides, hideHomewrecker, hidePineapple, hideBlueberry, hideDiesel, hideDream, hidePeach, hideGorilla, hideLPC, hideMasterkush23, hideShawty, hideTush, hideGorillaPath, hideLPCPath, hideMasterkushPath, hideShawtyPath, hideTushPath }) => {
     if (hideModal) return null;
     if (hidePathogen) return null;
     if (hidePesticides) return null;
@@ -11,6 +11,16 @@ const Modal = ({ hideModal, toggleModal, children, hidePathogen, hidePesticides,
     if (hideDiesel) return null;
     if(hideDream) return null;
     if (hidePeach) return null;
+    if (hideGorilla) return null;
+    if (hideLPC) return null;
+    if (hideMasterkush23) return null;
+    if (hideShawty) return null;
+    if (hideTush) return null;
+    if (hideGorillaPath) return null;
+    if (hideLPCPath) return null;
+    if (hideMasterkushPath) return null;
+    if (hideShawtyPath) return null;
+    if (hideTushPath) return null;
 
     return [
         <div className='modalOverlay' >
