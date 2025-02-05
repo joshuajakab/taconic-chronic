@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import About from './Components/About';
+import Background from '../src/media/web-background-horizontal.jpg';
 
 /*Components*/
 import Age from './Components/Age';
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <div className="App">
+     
       {!isOfAge &&
         
         <Router>

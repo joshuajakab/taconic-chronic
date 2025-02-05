@@ -16,7 +16,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-image: url('https://drive.google.com/uc?id=1mCqG1gtNWw064Ug4XoRaQoTq9hG7HFIa');
+    background-image: url('../src/media/web-background-horizontal.jpg');
     
 }
 
@@ -29,7 +29,7 @@ body,
 .fullHeight {
   
   width: 100%;
-  
+  height: 100%;
   position: absolute;
   top: 0;
     
