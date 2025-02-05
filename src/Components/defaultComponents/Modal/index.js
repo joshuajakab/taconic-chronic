@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css'
 
-const Modal = ({ hideModal, toggleModal, children, hidePathogen, hidePesticides, hideHomewrecker, hidePineapple, hideBlueberry, hideDiesel, hideDream, hidePeach, hideGorilla, hideLPC, hideMasterkush23, hideShawty, hideTush, hideGorillaPath, hideLPCPath, hideMasterkushPath, hideShawtyPath, hideTushPath }) => {
+const Modal = ({ hideModal, toggleModal, children, hidePathogen, hidePesticides, hideHomewrecker, hidePineapple, hideBlueberry, hideDiesel, hideDream, hidePeach, hideGorilla, hideLPC, hideMasterkush23, hideShawty, hideTush, hideGorillaPath, hideLPCPath, hideMasterkushPath, hideShawtyPath, hideTushPath, hideOrangeCream, hideOcifer, hideOciferPath, hidePesticide24, hideMasterKushRosin, hideMasterKushRosinPath }) => {
     if (hideModal) return null;
     if (hidePathogen) return null;
     if (hidePesticides) return null;
@@ -21,6 +21,12 @@ const Modal = ({ hideModal, toggleModal, children, hidePathogen, hidePesticides,
     if (hideMasterkushPath) return null;
     if (hideShawtyPath) return null;
     if (hideTushPath) return null;
+    if (hideOrangeCream) return null;
+    if (hideOcifer) return null;
+    if (hideOciferPath) return null;
+    if (hidePesticide24) return null;
+    if (hideMasterKushRosin) return null;
+    if (hideMasterKushRosinPath) return null;
 
     return [
         <div className='modalOverlay' >

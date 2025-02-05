@@ -21,6 +21,12 @@ import MasterkushPathogen from '../../media/masterkush-pathogen.jpg';
 import ShawtyPathogen from '../../media/shawty-pathogen.jpg';
 import TushPathogen from '../../media/tush-pathogen.jpg';
 import Pesticide23 from '../../media/pesticide23.jpg';
+import OrangeCream from '../../media/orangecream-potency-test.png';
+import Ocifer from '../../media/ocifer-potency.jpg';
+import OciferPathogen from '../../media/ocifer-pathogens.jpg';
+import Pesticide24 from '../../media/pesticides-24.jpg';
+import MasterKushRosin from '../../media/masterkushrosin-potency.jpg';
+import MasterKushRosinPath from '../../media/masterkushrosin-pathogen-test.jpg';
 import './testing.css';
 
 const Testing = props => {
@@ -45,6 +51,13 @@ const Testing = props => {
     const [hideShawtyPath, setHideShawtyPath] = useState(true);
     const [hideTushPath, setHideTushPath] = useState(true); 
     const [hidePesticide23, setHIdePesticide23] = useState(true);
+    const [hideOrangeCream, setHideOrangeCream] = useState(true);
+    const [hideOcifer, setHideOcifer] = useState(true);
+    const [hideOciferPath, setHideOciferPath] = useState(true);
+    const [hidePesticide24, setHidePestricide24] = useState(true);
+    const [hideMasterKushRosin, setHideMasterKushRosin] = useState(true);
+    const [hideMasterKushRosinPath, setHideMasterKushRosinPath] = useState(true);
+
  
     const togglePathogen = () => setHidePathogen(!hidePathogen);
     const togglePesticides = () => setHidePesticides(!hidePesticides);
@@ -66,7 +79,12 @@ const Testing = props => {
     const toggleShawtyPath = () => setHideShawtyPath(!hideShawtyPath);
     const toggleTushPath = () => setHideTushPath(!hideTushPath);
     const togglePesticide23 = () => setHIdePesticide23(!hidePesticide23);
-     
+    const toggleOrangeCream = () => setHideOrangeCream(!hideOrangeCream);
+    const toggleOcifer = () => setHideOcifer(!hideOcifer);
+    const toggleOciferPath = () => setHideOciferPath(!hideOciferPath);
+    const togglePesticide24 = () => setHidePestricide24(!hidePesticide24);
+    const toggleMasterKushRosin = () => setHideMasterKushRosin(!hideMasterKushRosin);
+    const toggleMasterKushRosinPath = () => setHideMasterKushRosinPath(!hideMasterKushRosinPath);     
  
     const configPathogen = {
         hidePathogen,
@@ -168,6 +186,35 @@ const Testing = props => {
         togglePesticide23
     };
 
+    const configOrangeCream = {
+        hideOrangeCream,
+        toggleOrangeCream
+    };
+
+    const configOcifer = {
+        hideOcifer,
+        toggleOcifer
+    };
+
+    const configOciferPath = {
+        hideOciferPath,
+        toggleOciferPath
+    };
+
+    const configPesticide24 = {
+        hidePesticide24,
+        togglePesticide24
+    };
+
+    const configMasterKushRosin = {
+        hideMasterKushRosin,
+        toggleMasterKushRosin
+    };
+
+    const configMasterKushRosinPath = {
+        hideMasterKushRosinPath,
+        toggleMasterKushRosinPath
+    };
 
  
 
@@ -202,6 +249,16 @@ const Testing = props => {
                 <Link onClick={toggleShawtyPath} className='test-link' ><h2>Shawty Pathogen Test</h2></Link>
                 <Link onClick={toggleTush} className='test-link' ><h2>Tush Kush</h2></Link>
                 <Link onClick={toggleTushPath} className='test-link' ><h2>Tush Kush Pathogen Test</h2></Link>
+                <Link onClick={toggleMasterKushRosin} className='test-link'><h2>Master Kush Flower Rosin Potency</h2></Link>
+                <Link onClick={toggleMasterKushRosinPath} className='test-link'><h2>Master Kush Flower Rosin Pathogen</h2></Link>
+
+            <h1 className='menu-link'>2024</h1>
+
+                <Link onClick={toggleOrangeCream} className='test-link'><h2>Pressure Drops - Orange Cream Potency Test</h2></Link>
+                <Link onClick={toggleOcifer} className='test-link'><h2>Ocifer Potency</h2></Link>
+                <Link onClick={toggleOciferPath} className='test-link'><h2>Ocifer Pathogen</h2></Link>
+                <Link onClick={togglePesticide24} className='test-link'><h2>Pesticides 2024</h2></Link>
+
            
             <Modal {...configPathogen}>
                 <img src={Pathogen22} alt='test' className='test' />
@@ -297,6 +354,37 @@ const Testing = props => {
                 <img src={TushPathogen} alt='test' className='test' />
                 <h2 onClick={toggleTushPath} className='test-exit'>Back to list</h2>
             </Modal>
+
+            <Modal {...configOrangeCream}>
+                <img src={OrangeCream} alt='test' className='test' />
+                <h2 onClick={toggleOrangeCream} className='test-exit'>Back to list</h2>
+            </Modal>
+
+            <Modal {...configOcifer}>
+                <img src={Ocifer} alt='test' className='test' />
+                <h2 onClick={toggleOcifer} className='test-exit'>Back to list</h2>
+            </Modal>
+
+            <Modal {...configOciferPath}>
+                <img src={OciferPathogen} alt='test' className='test' />
+                <h2 onClick={toggleOciferPath} className='test-exit'>Back to list</h2>    
+            </Modal> 
+
+            <Modal {...configPesticide24}>
+                <img src={Pesticide24} alt='test' className='test' />
+                <h2 onClick={togglePesticide24} className='test-exit'>Back to list</h2>
+            </Modal>
+
+            <Modal {...configMasterKushRosin}>
+                <img src={MasterKushRosin} alt='test' className='test' />
+                <h2 onClick={toggleMasterKushRosin} className='test-exit'>Back to list</h2>
+            </Modal>
+
+            <Modal {...configMasterKushRosinPath}>
+                <img src={MasterKushRosinPath} alt='test' className='test' />
+                <h2 onClick={toggleMasterKushRosinPath} className='test-exit'>Back to list</h2>
+            </Modal>
+
         </div>
     )
 };
